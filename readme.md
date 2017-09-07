@@ -200,7 +200,8 @@ Returns
     "id": "d7ba87156b", 
     "last_name": "Simard"...
   }...
-]```
+]
+```
 
 **Endpoint /<session_id>/player/<player_id>**
 
