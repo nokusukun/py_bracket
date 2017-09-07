@@ -36,7 +36,8 @@ Reuturns
   "id": "1vYySSg6twYsTTytHI-dKA", 
   "match_type": "flyweight", 
   "players": []
-}```
+}
+```
 
 
 **Endpoint /<session_id>**
@@ -61,7 +62,8 @@ Returns
     "371b0d0ac4", 
     "03ae209a26"...
   ]
-}```
+}
+```
 
 
 **Endpoint /<session_id>/add_player**
@@ -100,7 +102,8 @@ Returns
   "speed": 0, 
   "stamina": 0, 
   "weight": null
-}```
+}
+```
 
 **Endpoint /<session_id>/add_player**
 
@@ -399,7 +402,8 @@ Returns
     "player1": "4538187758", 
     "player2": "f1abb08ed0", 
     "winner": null
-}```
+}
+```
 
 
 **Endpoint /<session_id>/match/<m_id>/set_winner/<player_id>**
