@@ -141,7 +141,8 @@ Returns
   "speed": 0, 
   "stamina": 0, 
   "weight": null
-}```
+}
+```
 
 
 **Endpoint /<session_id>/players**
@@ -227,7 +228,8 @@ Returns
   "height": "240", 
   "id": "51b68c588a", 
   "last_name": "Brown"...
-}```
+}
+```
 
 
 **Endpoint /<session_id>/player/<player_id>/edit?args**
@@ -256,7 +258,8 @@ Returns
   "height": "240", 
   "id": "51b68c588a", 
   "last_name": "Brown"...
-}```
+}
+```
 
 
 **Endpoint /<session_id>/generate_bracket**
@@ -382,7 +385,8 @@ Returns
     "player1": "bf9af20c5e", 
     "player2": "c7ae61adb3", 
     "winner": null
-}```
+}
+```
 
 **Endpoint /<session_id>/match/<match_no>**
 
