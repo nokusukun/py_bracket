@@ -19,12 +19,17 @@
 
 
 **Endpoint /new/<tournament type>**
+
 ```http://localhost:1122/new/<tournament type>```
+
 Creates a new tournament. A session_id is supplied to access the tournament
 
 Example
+
 ```http://localhost:1122/new/flyweight```
+
 Reuturns
+
 ```json
 {
   "bracket": [], 
@@ -35,13 +40,17 @@ Reuturns
 
 
 **Endpoint /<session_id>**
+
 ```http://localhost:1122/<session_id>```
+
 Returns tournament data and bracket information
 
 Example
+
 ```http://localhost:1122/G42GHgc728kLxYuyfGlbfA```
 
 Returns
+
 ```json
 {
   "bracket": [], 
@@ -56,13 +65,17 @@ Returns
 
 
 **Endpoint /<session_id>/add_player**
+
 ```http://localhost:1122/<session_id>/add_player?arguments```
+
 Adds a player to the tournament.
 
 Example
+
 ```http://localhost:1122/WgULnabTJrF7Kayo6ZQDmA/add_player?first_name=Alfred&last_name=John```
 
 Returns
+
 ```json
 {
   "achievement": null, 
@@ -90,13 +103,17 @@ Returns
 }```
 
 **Endpoint /<session_id>/add_player**
+
 ```http://localhost:1122/<session_id>/add_player?arguments```
+
 Adds a player to the tournament.
 
 Example
+
 ```http://localhost:1122/WgULnabTJrF7Kayo6ZQDmA/add_player?first_name=Alfred&last_name=John```
 
 Returns
+
 ```json
 {
   "achievement": null, 
@@ -125,13 +142,17 @@ Returns
 
 
 **Endpoint /<session_id>/players**
+
 ```http://localhost:1122/<session_id>/players```
+
 Returns a list of players in a tournament
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/players```
 
 Returns
+
 ```json
 [
   {
@@ -178,13 +199,17 @@ Returns
 ]```
 
 **Endpoint /<session_id>/player/<player_id>**
+
 ```http://localhost:1122/<session_id>/player/<player_id>```
+
 Returns player information.
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/player/51b68c588a```
 
 Returns
+
 ```json
 {
   "achievement": "National", 
@@ -203,13 +228,17 @@ Returns
 
 
 **Endpoint /<session_id>/player/<player_id>/edit?args**
+
 ```http://localhost:1122/<session_id>/player/<player_id>/edit?args```
+
 Edits player data.
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/player/51b68c588a/edit?first_name=Casey```
 
 Returns
+
 ```json
 {
   "achievement": "National", 
@@ -228,13 +257,17 @@ Returns
 
 
 **Endpoint /<session_id>/generate_bracket**
+
 ```http://localhost:1122/<session_id>/generate_bracket```
+
 Generates a bracket and it's corresponding matches.
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/generate_bracket```
 
 Returns
+
 ```json
 [
   {
@@ -276,13 +309,17 @@ Returns
 ]```
 
 **Endpoint /<session_id>/bracket/<bracket_no>**
+
 ```http://localhost:1122/<session_id>/bracket/<bracket_no>```
+
 Returns a specific bracket
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/bracket/1```
 
 Returns
+
 ```json
 [
   {
@@ -325,13 +362,17 @@ Returns
 
 
 **Endpoint /<session_id>/match/next**
+
 ```http://localhost:1122/match/next```
+
 Returns the next upcomming match.
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/match/next```
 
 Returns
+
 ```json
 {
     "match_number": 1, 
@@ -341,13 +382,17 @@ Returns
 }```
 
 **Endpoint /<session_id>/match/<match_no>**
+
 ```http://localhost:1122/match/<match_no>```
+
 Returns a specific match info.
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/match/6```
 
 Returns
+
 ```json
 {
     "match_number": 6, 
@@ -358,13 +403,17 @@ Returns
 
 
 **Endpoint /<session_id>/match/<m_id>/set_winner/<player_id>**
+
 ```http://localhost:1122/match/<m_id>/set_winner/<player_id>```
+
 Sets a winner
 
 Example
+
 ```http://localhost:1122/XXlI0NqN6usHsPeNtHyzuQ/match/1/set_winner/bf9af20c5e```
 
 Returns
+
 ```json
 [
   {
